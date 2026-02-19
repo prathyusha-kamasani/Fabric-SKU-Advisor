@@ -1,10 +1,19 @@
 # Fabric SKU Advisor
 
-A Microsoft Fabric notebook that analyses your capacity consumption and recommends the right SKU.
+A Microsoft Fabric tool that analyses your capacity consumption and recommends the right SKU.
 
 It connects to the [Capacity Metrics](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app) semantic model via Semantic Link, pulls your actual CU data, and generates an interactive HTML report with sizing recommendations, health scores, and cost comparisons.
 
-![Fabric SKU Advisor](https://www.data-nova.io/post/fabric-sku-advisor-sizing-tool)
+## Two ways to use it
+
+| | Notebook | CLI |
+|---|---|---|
+| **Data source** | Capacity Metrics semantic model (live) | CSV file |
+| **Best for** | Client engagements, full analysis | Workshops, what-if scenarios |
+| **Throttling/carryforward** | Yes (from semantic model) | No (CU totals only) |
+| **Output** | Interactive HTML report | Same interactive HTML report |
+
+Both produce the same Plotly-powered HTML report with consistent styling, charts, and recommendations ([sample report](sample_report.html)).
 
 ## What it does
 
@@ -18,17 +27,28 @@ It connects to the [Capacity Metrics](https://learn.microsoft.com/en-us/fabric/e
 - Generates a self-contained **HTML report** you can share with anyone
 - Supports **single capacity** (deep dive) or **multi capacity** (analyse your whole estate)
 
-## Quick start
+## Quick start: Notebook
 
-1. Import the notebook into a Fabric workspace
-2. Set your `WORKSPACE_ID` and `DATASET_ID` in the configuration cell (these point to your Capacity Metrics semantic model)
+1. Import `fabric_sku_advisor_notebook.ipynb` into a Fabric workspace
+2. Set your `WORKSPACE_ID` and `DATASET_ID` in the configuration cell
 3. Set `ANALYSIS_MODE` to `"single"` or `"multi"`
 4. If single mode, provide your `CAPACITY_ID`
 5. Run all cells
 
-That's it. No pip installs, no service principals, no REST APIs. It uses `sempy.fabric` which is pre-installed in Fabric notebooks.
+No pip installs, no service principals, no REST APIs. It uses `sempy.fabric` which is pre-installed in Fabric notebooks.
 
-## Configuration
+## Quick start: CLI
+
+```bash
+pip install pandas numpy plotly
+python fabric_sku_advisor_cli.py -i sample_cu_data.csv -o report.html --capacity-name "My Capacity" --current-sku F64
+```
+
+CSV format: `Date, Item Name, Item Type, CUs`
+
+Options: `--console` (text summary), `--needs-free-viewers` (F64+ minimum), `--no-weekday-split`, `--no-spike-filter`
+
+## Configuration (notebook)
 
 ```python
 WORKSPACE_ID   = "your-workspace-guid"
@@ -47,16 +67,21 @@ SAVE_TO_LAKEHOUSE      = True
 
 ## Requirements
 
+**Notebook:**
+
 - A Fabric or Power BI Premium capacity
 - The [Capacity Metrics app](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app) installed in your tenant
 - Read/Build permissions on the Capacity Metrics semantic model
 - XMLA endpoint enabled (Capacity Settings > Power BI Workloads)
 
+**CLI:**
+
+- Python 3.8+
+- `pandas`, `numpy`, `plotly` (`pip install pandas numpy plotly`)
+
 ## How it works
 
-The full algorithm breakdown, design decisions, and what I learned building this are covered in the blog post:
-
-**[I Built a Tool to Size Fabric SKUs](https://www.data-nova.io/post/fabric-sku-advisor-sizing-tool)**
+The full algorithm breakdown, design decisions, and what I learned building this are covered in the blog post: [I Built a Tool to Size Fabric SKUs](https://www.data-nova.io/post/fabric-sku-advisor-sizing-tool)
 
 ## Version compatibility
 
@@ -68,6 +93,6 @@ This tool provides advisory recommendations based on historical consumption data
 
 ## Author
 
-**Prathy Kamasani** | Microsoft MVP | [Data Nova](https://www.data-nova.io)
+Prathy Kamasani | Microsoft MVP | [Data Nova](https://www.data-nova.io)
 
 Built as part of an upcoming Fabric capacity course. Feedback, issues, and PRs welcome.

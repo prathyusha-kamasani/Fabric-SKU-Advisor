@@ -1,0 +1,76 @@
+Date,Item Name,Item Type,CUs
+2024-01-15,Sales Semantic Model,Semantic Model,320000
+2024-01-15,Finance ETL Notebook,Notebook,280000
+2024-01-15,Customer 360 Dataflow,Dataflow Gen2,150000
+2024-01-15,Executive Dashboard,Report Views,60000
+2024-01-15,Inventory Pipeline,Data Pipeline,40000
+2024-01-16,Sales Semantic Model,Semantic Model,310000
+2024-01-16,Finance ETL Notebook,Notebook,220000
+2024-01-16,Customer 360 Dataflow,Dataflow Gen2,120000
+2024-01-16,Executive Dashboard,Report Views,45000
+2024-01-16,Inventory Pipeline,Data Pipeline,25000
+2024-01-17,Sales Semantic Model,Semantic Model,305000
+2024-01-17,Finance ETL Notebook,Notebook,210000
+2024-01-17,Customer 360 Dataflow,Dataflow Gen2,110000
+2024-01-17,Executive Dashboard,Report Views,40000
+2024-01-17,Inventory Pipeline,Data Pipeline,15000
+2024-01-18,Sales Semantic Model,Semantic Model,380000
+2024-01-18,Finance ETL Notebook,Notebook,350000
+2024-01-18,Customer 360 Dataflow,Dataflow Gen2,140000
+2024-01-18,Executive Dashboard,Report Views,55000
+2024-01-18,Inventory Pipeline,Data Pipeline,25000
+2024-01-19,Sales Semantic Model,Semantic Model,290000
+2024-01-19,Finance ETL Notebook,Notebook,180000
+2024-01-19,Customer 360 Dataflow,Dataflow Gen2,100000
+2024-01-19,Executive Dashboard,Report Views,35000
+2024-01-19,Inventory Pipeline,Data Pipeline,15000
+2024-01-20,Sales Semantic Model,Semantic Model,50000
+2024-01-20,Finance ETL Notebook,Notebook,20000
+2024-01-20,Customer 360 Dataflow,Dataflow Gen2,80000
+2024-01-20,Executive Dashboard,Report Views,15000
+2024-01-20,Inventory Pipeline,Data Pipeline,15000
+2024-01-21,Sales Semantic Model,Semantic Model,45000
+2024-01-21,Finance ETL Notebook,Notebook,15000
+2024-01-21,Customer 360 Dataflow,Dataflow Gen2,70000
+2024-01-21,Executive Dashboard,Report Views,10000
+2024-01-21,Inventory Pipeline,Data Pipeline,10000
+2024-01-22,Sales Semantic Model,Semantic Model,330000
+2024-01-22,Finance ETL Notebook,Notebook,290000
+2024-01-22,Customer 360 Dataflow,Dataflow Gen2,160000
+2024-01-22,Executive Dashboard,Report Views,65000
+2024-01-22,Inventory Pipeline,Data Pipeline,35000
+2024-01-23,Sales Semantic Model,Semantic Model,320000
+2024-01-23,Finance ETL Notebook,Notebook,240000
+2024-01-23,Customer 360 Dataflow,Dataflow Gen2,130000
+2024-01-23,Executive Dashboard,Report Views,48000
+2024-01-23,Inventory Pipeline,Data Pipeline,12000
+2024-01-24,Sales Semantic Model,Semantic Model,450000
+2024-01-24,Finance ETL Notebook,Notebook,420000
+2024-01-24,Customer 360 Dataflow,Dataflow Gen2,150000
+2024-01-24,Executive Dashboard,Report Views,58000
+2024-01-24,Inventory Pipeline,Data Pipeline,22000
+2024-01-25,Sales Semantic Model,Semantic Model,310000
+2024-01-25,Finance ETL Notebook,Notebook,220000
+2024-01-25,Customer 360 Dataflow,Dataflow Gen2,120000
+2024-01-25,Executive Dashboard,Report Views,42000
+2024-01-25,Inventory Pipeline,Data Pipeline,8000
+2024-01-26,Sales Semantic Model,Semantic Model,300000
+2024-01-26,Finance ETL Notebook,Notebook,200000
+2024-01-26,Customer 360 Dataflow,Dataflow Gen2,105000
+2024-01-26,Executive Dashboard,Report Views,38000
+2024-01-26,Inventory Pipeline,Data Pipeline,7000
+2024-01-27,Sales Semantic Model,Semantic Model,55000
+2024-01-27,Finance ETL Notebook,Notebook,25000
+2024-01-27,Customer 360 Dataflow,Dataflow Gen2,85000
+2024-01-27,Executive Dashboard,Report Views,18000
+2024-01-27,Inventory Pipeline,Data Pipeline,17000
+2024-01-28,Sales Semantic Model,Semantic Model,48000
+2024-01-28,Finance ETL Notebook,Notebook,18000
+2024-01-28,Customer 360 Dataflow,Dataflow Gen2,72000
+2024-01-28,Executive Dashboard,Report Views,12000
+2024-01-28,Inventory Pipeline,Data Pipeline,10000
+2024-01-29,Sales Semantic Model,Semantic Model,340000
+2024-01-29,Finance ETL Notebook,Notebook,300000
+2024-01-29,Customer 360 Dataflow,Dataflow Gen2,170000
+2024-01-29,Executive Dashboard,Report Views,70000
+2024-01-29,Inventory Pipeline,Data Pipeline,40000
