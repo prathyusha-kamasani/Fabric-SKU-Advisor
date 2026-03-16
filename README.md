@@ -2,7 +2,9 @@
 
 A Microsoft Fabric tool that analyses your capacity consumption and recommends the right SKU.
 
-It connects to the [Capacity Metrics](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app) semantic model via Semantic Link, pulls your actual CU data, and generates an interactive HTML report with sizing recommendations, health scores, and cost comparisons.
+It connects to the [Capacity Metrics](https://learn.microsoft.com/en-us/fabric/enterprise/metrics-app) semantic model via Semantic Link, pulls your actual CU data, and generates a self-contained HTML report with sizing recommendations, health scores, and cost comparisons.
+
+**v2.0** — redesigned report with an editorial layout, WCAG-AA accessible contrast, structured KPI grids, contextual help modals, and system-safe typography. No external dependencies — the report is a single file you can email or host anywhere.
 
 ## Two ways to use it
 
@@ -13,7 +15,7 @@ It connects to the [Capacity Metrics](https://learn.microsoft.com/en-us/fabric/e
 | **Throttling/carryforward** | Yes (from semantic model) | No (CU totals only) |
 | **Output** | Interactive HTML report | Same interactive HTML report |
 
-Both produce the same Plotly-powered HTML report with consistent styling, charts, and recommendations ([sample report](sample_report.html)).
+Both produce the same self-contained HTML report with Plotly charts, contextual help, and actionable recommendations ([sample report](sample_report.html)).
 
 ## What it does
 
@@ -24,7 +26,7 @@ Both produce the same Plotly-powered HTML report with consistent styling, charts
 - Runs **trend analysis** with weekly growth rate and direction
 - Compares **reserved vs PAYG pricing** with break-even analysis
 - Shows **workspace-level** and **item-level** CU breakdowns
-- Generates a self-contained **HTML report** you can share with anyone
+- Generates a self-contained **HTML report** with contextual help modals you can share with anyone
 - Supports **single capacity** (deep dive) or **multi capacity** (analyse your whole estate)
 
 ## Quick start: Notebook
@@ -95,4 +97,4 @@ This tool provides advisory recommendations based on historical consumption data
 
 Prathy Kamasani | Microsoft MVP | [Data Nova](https://www.data-nova.io)
 
-Built as part of an upcoming Fabric capacity course. Feedback, issues, and PRs welcome.
+Built as part of the [Fabric Capacity Units](https://www.data-nova.io) training course. Feedback, issues, and PRs welcome.
